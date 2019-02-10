@@ -18,7 +18,7 @@ module.exports = function() {
 
   require("../routes/backend.routes")(app);
   app.use(bodyParser.json());
-  app.set("view", "./view");
+  app.set("views", "./views");
   app.set("view engine", "ejs");
   return app;
 };
