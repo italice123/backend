@@ -3,7 +3,7 @@ const secretKey = "darkzidious";
 
 function getToken(json) {
     return token = jwt.sign(json, secretKey,{
-        expiresIn: 8640000
+        expiresIn: 8640000 //expires in 24 hours
     });
 }
 
